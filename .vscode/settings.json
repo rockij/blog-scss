@@ -9,5 +9,8 @@
     ],
     "editor.codeActionsOnSave": {
     
-    }
+    },
+    "liveSassCompile.settings.autoprefix": [
+        
+    ]
 }
