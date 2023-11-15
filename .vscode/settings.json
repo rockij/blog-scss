@@ -12,5 +12,8 @@
     },
     "liveSassCompile.settings.autoprefix": [
         
-    ]
+    ],
+    "editor.fontSize": 13,
+    "editor.minimap.autohide": true,
+    "files.autoSave": "onFocusChange"
 }
