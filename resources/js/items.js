@@ -14,6 +14,11 @@ let items = [
     category: 'button',
     url: 'html/button-animatted-striped-gradient.html',
   },
+  {
+    productName: 'background - origin에 따른 변화',
+    category: 'background',
+    url: 'html/background_origin_position_type.html',
+  },
   // {
   //   productName: '',
   //   category: '',
