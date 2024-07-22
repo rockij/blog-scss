@@ -19,6 +19,11 @@ let items = [
     category: 'background',
     url: 'html/background_origin_position_type.html',
   },
+  {
+    productName: 'grid를 이용한 겹치는 레이아웃 구성',
+    category: 'layout',
+    url: 'html/smol_avatar_list_component.html',
+  },
   // {
   //   productName: '',
   //   category: '',
