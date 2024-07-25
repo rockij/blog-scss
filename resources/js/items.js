@@ -24,6 +24,18 @@ let items = [
     category: 'layout',
     url: 'html/smol_avatar_list_component.html',
   },
+  {
+    productName: '경고 표시줄',
+    category: 'icon-loading',
+    category2: 'animation',
+    url: 'html/warning_bar.html',
+  },
+  {
+    productName: '가로 스크롤 캐러셀(only css)',
+    category: 'scroll-parallax',
+    category2: 'slide',
+    url: 'html/css_scroll_snap_carousel.html',
+  },
   // {
   //   productName: '',
   //   category: '',
