@@ -36,6 +36,22 @@ let items = [
     category2: 'slide',
     url: 'html/css_scroll_snap_carousel.html',
   },
+  {
+    productName: '상태 있는 다중 범위 선택 그룹',
+    category: 'form',
+    url: 'html/stateful_multi_range_selection.html',
+  },
+  {
+    productName: '선택한 것외에 애니메이션 주기',
+    category: 'animation',
+    category2: 'navigation-list',
+    url: 'html/previous_next_sibling_animation.html',
+  },
+  {
+    productName: '지정 클래스 태그가 한개만 있을때 적용',
+    category: 'basic',
+    url: 'html/only_of_selector_using.html',
+  },
   // {
   //   productName: '',
   //   category: '',

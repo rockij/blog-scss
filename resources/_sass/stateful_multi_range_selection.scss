@@ -1,0 +1,83 @@
+.selection-options {
+  /* Range of checked items */
+  /* Yes, this could just be label:has(:checked) but we're demonstrating
+    selecting a range :) */
+  label:has(:checked):has(~ label :checked),
+  label:has(:checked):not(label:has(+ label :checked)) {
+    border-inline-color: black;
+    background-color: palegreen;
+  }
+
+  /* First checked item in a range
+    OR top of a single checked item */
+  label:has(:checked):not(label:has(:checked) + label) {
+    --radius-tl: 0.75em;
+    --radius-tr: 0.75em;
+
+    border-block-start-color: black;
+  }
+
+  /* Last checked item in a range
+    OR bottom of a single checked item */
+  label:has(:checked):not(label:has(+ label :checked)) {
+    --radius-bl: 0.75em;
+    --radius-br: 0.75em;
+
+    border-block-end-color: black;
+    box-shadow: 0 4px 3px -2px hsl(0 0% 0% / 35%);
+  }
+}
+
+.selection-groups {
+  border-radius: 1rem;
+  background-color: white;
+  padding: 2rem;
+  font-size: 1.15rem;
+  accent-color: mediumvioletred;
+}
+
+.selection-groups legend {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.selection-groups fieldset {
+  border: none;
+  padding: 0;
+}
+
+.selection-options {
+  display: grid;
+  margin-block-start: 1rem;
+}
+
+.selection-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+  border: 1px solid transparent;
+  border-radius: var(--radius-tl, 0) var(--radius-tr, 0) var(--radius-br, 0)
+    var(--radius-bl, 0);
+}
+
+/* :has() support alert */
+aside {
+  max-width: 30ch;
+  padding: 1rem;
+  background-color: palegoldenrod;
+  border-radius: 0.5rem;
+  margin-block-end: 1rem;
+  line-height: 1.3;
+
+  code {
+    font-size: 1.25em;
+    color: firebrick;
+  }
+}
+
+@supports selector(:has(+ *)) {
+  aside {
+    display: none;
+  }
+}
