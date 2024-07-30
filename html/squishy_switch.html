@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="ko-KR" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <link rel="stylesheet" href="../resources/css/squishy_switch.css">
+    <title></title>
+</head>
+
+<body>
+
+    <div class="toggle-container green">
+        <input class="toggle-checkbox" type="checkbox">
+        <div class="toggle-track">
+            <div class="toggle-thumb"></div>
+        </div>
+    </div>
+
+    <div class="toggle-container blue">
+        <input class="toggle-checkbox" type="checkbox">
+        <div class="toggle-track">
+            <div class="toggle-thumb"></div>
+        </div>
+    </div>
+
+    <div class="toggle-container boo">
+        <input class="toggle-checkbox" type="checkbox">
+        <div class="toggle-track">
+            <div class="toggle-thumb"></div>
+        </div>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const detectToggleOnce = (e) => {
+            e.target.classList.add('toggled-once');
+        };
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('click', detectToggleOnce, { once: true });
+        });
+    </script>
+
+</body>
+
+</html>
