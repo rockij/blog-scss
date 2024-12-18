@@ -52,6 +52,12 @@ let items = [
     category: 'basic',
     url: 'html/only_of_selector_using.html',
   },
+  {
+    productName: '가장 간단한 내부 글로우 카드 애니메이션',
+    category: 'animation',
+    category2: 'background-border',
+    url: 'html/simplest_inner_glow_card_animation.html',
+  },
   // {
   //   productName: '',
   //   category: '',
